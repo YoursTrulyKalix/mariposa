@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Website</title>
+  <link rel="stylesheet" href="1st web.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="navigation">
+    <nav class="container">
+      <div class="logo">
+        <a href="#home">INEVI<span>TABLE</span></a>
+      </div>
+      <div class="mobile-button">
+        <span style="float: right;" onclick="toggleMobileNavigation()"></span>
+      </div>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#shenenigans">Shenenigans</a> 
+        <a href="#contact">Contact</a>
+      </div>
+      <div id="mobile-sidenav" class="mobile-links">
+        <div class="mobile-logo" style="display: inline;">
+        <a href="#home" class="logo">INEVI<span>TABLE</span></a>
+        <span style="width: 100%;"></span>
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMobileNavigation()">&times;</a>
+            </div>
+            <a href="#about" onclick="toggleMobileNavigation()">About Us</a>
+            <a href="#services" onclick="toggleMobileNavigation()">Services</a>
+            <a href="#shenenigans" onclick="toggleMobileNavigation()">Careers</a>
+            <a href="#contact" onclick="toggleMobileNavigation()">Contact</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="hero" id="home">
+        <div class="text container">
+          <p class="pre-title">I alone can conquer the world</p>
+          <h1 class="title">INEVI<span>TABLE</span></h1>
+          <p class="post-title">I am the strongest!</p>
+          <a class="w3-button w3-round-large w3-indigo w3-hover-blue" href="#services">AT YOUR SERVICE</a> 
+        </div>
+        <div class="contact container" id="contact">
+        <div class="short-contact">
+          <h2>Contact us</h2>
+          <p class="w3-xlarge">We would like to hear from you!</p>
+          <div class="w3-large w3-margin-top contact-info">
+            <i class="fa fa-location-arrow"></i><span style="margin-left:10px;"><a href="https://www.google.com/maps/place/Bonifacio+Global+City,+Taguig,+Metro+Manila/@14.5431521,121.0209448,14z/data=!3m1!4b1!4m6!3m5!1s0x3397c8f3fa2994af:0x89c988af4760e40a!8m2!3d14.5408671!4d121.0503183!16zL20vMDd3ZzAw?entry=ttu" target="_blank">BGC Taguig, Manila</a></span><br>
+            <i class="fa fa-envelope-o"></i><span style="margin-left:10px;"><a href="invetable@shenigans.com">inevitable@shenigans.com</a></span><br>
+            <i class="fa fa-phone"></i><span style="margin-left:10px;"><a href="0922 tutunog tunog">0922 tutunog tunog</a></span><br>
+          </div>
+          <div class="w3-large w3-margin-top contact-info">
+            <i class="fa fa-linkedin"></i><span style="margin-left:10px;"><a href="https://www.linkedin.com/login" target="_blank" style="text-decoration: none;">- LinkedIn</a></span><br>
+            <i class="fa fa-facebook"></i><span style="margin-left:10px;"><a href="https://www.facebook.com/" target="_blank" style="text-decoration: none;"> - Facebook</a></span><br>
+            <i class="fa fa-twitter"></i><span style="margin-left:10px;"><a href="https://twitter.com/" target="_blank" style="text-decoration: none;">- Twitter</a></span><br>
+          </div>
+        </div>
+        <div class="form w3-margin-top">
+          <div class="container w3-round-xlarge">
+            <form class="w3-highway-blue w3-padding-large w3-round-large">
+              <label for="fname">First Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name">
+
+              <label for="lname">Last Name</label>
+              <input type="text" id="email" name="email" placeholder="Your email">
+
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+              <p>By submiting this form, you agree to our <a href="#" target="_blank">privacy policy</a></p><br>
+              <input class="w3-metro-blue" type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+      <script>
+        function toggleMobileNavigation() {
+          const mobileNavigation = document.getElementById("mobile-sidenav");
+          mobileNavigation.classList.toggle('mobile-links-active');
+        }
+    </script>
+
+    
+</body>
+</html>
